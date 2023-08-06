@@ -1,0 +1,123 @@
+#form {
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 60px;
+    width: 70%;
+    align-items: center;
+    color: #2b344b;
+    animation: iniciar .7s ease-out forwards;
+    pointer-events: all;
+    background-color: var(--background-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-check{
+    padding-right: 10px;    
+}
+
+.caixa-pessoal{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 30%);
+    border-bottom: 1px solid var(--background-third);
+}
+
+.title {
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+
+
+.input {
+    min-width: 300px;
+    border-radius: 100px;
+    border: 2px #6f7e8a solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+
+.input i {
+    font-size: 1.2em;
+    padding: 3px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input {
+    width: 80%;
+    border: none;
+    outline: none;
+    transform: translateY(-10%);
+    color: #2b344b;
+    font-size: 11pt;
+}
+
+
+
+#btn {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#btn button {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+.name {
+    font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+    #form {
+        z-index:-10;
+}
+}
+
+@keyframes iniciar {
+    0% {
+       opacity: 0;
+       transform: scale(0.9);
+    }
+
+    100% {
+       opacity: 1;
+       transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .caixa-pessoal{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #form{
+        width: min-content;
+        margin: 100px 20px;
+    }
+
+    .caixa-pessoal .input label p{
+        font-size: smaller;
+    }
+
+    footer{
+        width: max-content;
+    }
+}
+
+.invalido{
+    color: red;
+    font-weight: bold;
+}

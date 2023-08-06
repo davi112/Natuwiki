@@ -1,0 +1,30 @@
+main{
+    margin: 5%;
+}
+.alterar{
+    background-color: white;
+    border: 1px solid var(--background-primary);
+    border-radius: 100px;
+    width: auto; 
+    text-align: center;
+    padding: 10px;
+    transition:background-color .2s ;
+    margin-bottom: 10px;
+}
+.alterar:hover{
+    background-color: var(--background-third);
+}
+.alterar a:hover, button:hover{
+    color: white;
+}
+.alterar a, button{
+    color: var(--background-third);
+    text-decoration: none;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    width: 100%;  
+}
+tr:nth-child(odd){
+    background-color: var(--background-primary);
+}

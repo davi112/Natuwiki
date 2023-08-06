@@ -1,0 +1,108 @@
+input,
+textarea {
+    width: 90%;
+}
+
+#contato-form {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40% 45px 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--background-primary);
+    border-radius: 10px;
+}
+
+section h1,
+h3 {
+    color: black;
+    margin: 2rem;
+}
+
+form label {
+    color: #f5f5f5;
+}
+
+label,
+input,
+textarea {
+    display: flex
+}
+
+.input-block {
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid var(--background-primary);
+}
+
+textarea {
+    max-width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+#btn {
+    margin: 5% 25%;
+    width: 50%;
+    text-align: center;
+}
+
+#btn button {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width: 950px) {
+    #contato-form {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:950px) {
+
+    #contato-form {
+        width: 90%;
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        padding: 20px 45px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    
+    .cabecalho h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cabecalho h3 {
+        font-size: 25px;
+    }
+
+    #contato-form {
+        width: 90%;
+        display:flex;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        padding: 20px 45px;
+    }
+    #info-contact{
+        position: absolute;
+    }
+
+}

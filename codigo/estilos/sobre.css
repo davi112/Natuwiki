@@ -1,0 +1,67 @@
+main {
+    margin: 5% 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--background-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main img {
+    height: 750px;
+    width: 800px;
+}
+
+main #title {
+    transform: scale(0.9) translateY(10px);
+    opacity: 0;
+    animation: 1s ease 0.3s animacaoTitulo forwards;
+    text-align: center;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+     }
+}
+
+.information {
+    background-color: var(--background-third);
+    border-right: 3px solid var(--background-primary);
+    padding: 20px;
+}
+
+.information a{
+    text-decoration: none;
+    color: black;
+}
+
+.accordion-bg{
+    background-color: var(--background-secondary);
+    text-align: justify;
+}
+
+.title-info{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 950px){
+    main{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        display: block;
+    }
+
+    .information{
+        border: none;
+    }
+}
